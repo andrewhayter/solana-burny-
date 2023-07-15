@@ -1,0 +1,22 @@
+```toml
+[workspace]
+members = [
+    "programs/community_governance",
+    "tests/community_governance",
+]
+
+[program.community_governance]
+# The path to the program's Anchor crate.
+path = "./programs/community_governance"
+# The program's idl, which is used to generate clients and TypeScript typings.
+idl = "./target/idl/community_governance.json"
+# The program's target binary for deployment.
+binary = "./target/deploy/community_governance.so"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+# Add custom scripts here.
+```

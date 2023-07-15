@@ -1,0 +1,30 @@
+```toml
+[package]
+name = "rewards_for_holding_and_staking_tokens"
+version = "0.1.0"
+edition = "2018"
+authors = ["OpenAI <info@openai.com>"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+default = []
+no-entry = []
+
+[dependencies]
+anchor-lang = "0.14.0"
+solana-program = "1.7.0"
+
+[dev-dependencies]
+anchor-lang = "0.14.0"
+solana-program-test = "1.7.0"
+solana-sdk = "1.7.0"
+
+[dependencies.solana-sdk]
+version = "1.7.0"
+features = ["full"]
+
+[dependencies.anchor-spl]
+version = "0.14.0"
+```
